@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App en Railway</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Gestor de Usuarios</h1>
+
+    <form id="user-form">
+      <input type="hidden" id="user-id">
+      
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      
+      <div class="buttons">
+        <button type="submit" id="btn-save">Guardar</button>
+        <button type="button" id="btn-clear" class="btn-secondary">Limpiar</button>
+      </div>
+    </form>
+
+    <hr>
+
+    <h2>Usuarios Registrados</h2>
+    <div id="user-list">
+      </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
